@@ -1,5 +1,8 @@
 {
   "exclude": ["./build/templates"],
+  "publish": {
+    "exclude": ["./build"]
+  },
   "tasks": {
     "gen_width": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_width.ts > src/char_width.ts && deno fmt src/char_width.ts",
     "gen_names": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_names.ts > src/char_names.ts && deno fmt src/char_names.ts",
