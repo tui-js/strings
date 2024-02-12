@@ -1,5 +1,5 @@
 interface LoopAnsiCallback {
-  (char: string, lastStyle?: string): void;
+  (char: string, lastStyle?: string): void | true;
 }
 
 /**
@@ -7,6 +7,7 @@ interface LoopAnsiCallback {
  * For every character, that's not an ansi sequence call {callback}.\
  * If between last and current call there was an ansi style,
  * the second argument of that callback will be equal to that style.
+ * Returning `true` from {callback} will break the loop.
  *
  * @example
  * ```ts
@@ -23,6 +24,19 @@ interface LoopAnsiCallback {
  * console.log(text); // "Hello world"
  * console.log(styles); "\x1b[32m\x1b[0m"
  * ```
+ *
+ * @example
+ * ```ts
+ * let text = "";
+ * loopAnsi("Hello world", (char) => {
+ *    text += char;
+ *    if (char === "o") {
+ *      return true;
+ *    }
+ * });
+ *
+ * console.log(text); // "Hello"
+ * ```
  */
 export function loopAnsi(input: string, callback: LoopAnsiCallback): void {
   let ansi = 0;
@@ -33,14 +47,14 @@ export function loopAnsi(input: string, callback: LoopAnsiCallback): void {
       ansi = 1;
       style += char;
     } else if (ansi >= 3 && isFinalAnsiByte(char)) {
-      callback(char, style);
+      if (callback(char, style + char)) break;
       style = "";
       ansi = 0;
     } else if (ansi > 0) {
       ansi += 1;
       style += char;
     } else {
-      callback(char);
+      if (callback(char)) break;
     }
   }
 }
