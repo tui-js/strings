@@ -12,10 +12,13 @@
     "./slice": "./src/slice.ts"
   },
 
-  "exclude": [
-    "./build/templates",
-    "./src/char_names.ts" // we ignore this file, because its like 1MB
-  ],
+  "exclude": ["./build/templates"],
+
+  "lint": {
+    "exclude": [
+      "./src/char_names.ts" // we ignore this file, because its like 1MB
+    ]
+  },
 
   "publish": {
     "exclude": ["./build"]
