@@ -1,0 +1,16 @@
+{
+  "scriptId": "317",
+  "url": "https://jsr.io/@std/assert/0.215.0/assert_is_error.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1979, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "assertIsError",
+      "ranges": [{ "startOffset": 855, "endOffset": 1978, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

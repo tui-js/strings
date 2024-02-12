@@ -1,0 +1,16 @@
+{
+  "scriptId": "328",
+  "url": "https://jsr.io/@std/assert/0.215.0/assert_rejects.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1564, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "assertRejects",
+      "ranges": [{ "startOffset": 191, "endOffset": 1563, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

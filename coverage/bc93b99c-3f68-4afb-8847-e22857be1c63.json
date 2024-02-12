@@ -1,0 +1,34 @@
+{
+  "scriptId": "336",
+  "url": "file:///home/mateusz/Documents/Projects/strings/src/ansi_looping.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1253, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "loopAnsi",
+      "ranges": [
+        { "startOffset": 548, "endOffset": 939, "count": 12 },
+        { "startOffset": 646, "endOffset": 937, "count": 216 },
+        { "startOffset": 673, "endOffset": 717, "count": 33 },
+        { "startOffset": 717, "endOffset": 933, "count": 183 },
+        { "startOffset": 737, "endOffset": 761, "count": 54 },
+        { "startOffset": 763, "endOffset": 833, "count": 33 },
+        { "startOffset": 833, "endOffset": 933, "count": 150 },
+        { "startOffset": 853, "endOffset": 898, "count": 87 },
+        { "startOffset": 898, "endOffset": 933, "count": 63 }
+      ],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "isFinalAnsiByte",
+      "ranges": [
+        { "startOffset": 1010, "endOffset": 1252, "count": 54 },
+        { "startOffset": 1231, "endOffset": 1249, "count": 33 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

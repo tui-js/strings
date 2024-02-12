@@ -1,0 +1,16 @@
+{
+  "scriptId": "331",
+  "url": "https://jsr.io/@std/assert/0.215.0/assert.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 500, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "assert",
+      "ranges": [{ "startOffset": 410, "endOffset": 499, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

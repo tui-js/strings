@@ -1,0 +1,19 @@
+{
+  "scriptId": "308",
+  "url": "file:///home/mateusz/Documents/Projects/strings/tests/shared.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 238, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "intoCodePoints",
+      "ranges": [
+        { "startOffset": 54, "endOffset": 237, "count": 9 },
+        { "startOffset": 153, "endOffset": 214, "count": 322 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

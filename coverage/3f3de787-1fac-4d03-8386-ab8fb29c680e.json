@@ -1,0 +1,16 @@
+{
+  "scriptId": "320",
+  "url": "https://jsr.io/@std/assert/0.215.0/assert_less_or_equal.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 765, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "assertLessOrEqual",
+      "ranges": [{ "startOffset": 513, "endOffset": 764, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}

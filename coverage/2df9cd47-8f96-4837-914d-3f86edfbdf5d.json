@@ -1,0 +1,24 @@
+{
+  "scriptId": "306",
+  "url": "file:///home/mateusz/Documents/Projects/strings/tests/width.test.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 6071, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 243, "endOffset": 6068, "count": 1 },
+        { "startOffset": 4098, "endOffset": 4600, "count": 2 },
+        { "startOffset": 4131, "endOffset": 4596, "count": 117 },
+        { "startOffset": 4412, "endOffset": 4590, "count": 349 },
+        { "startOffset": 4590, "endOffset": 4596, "count": 116 },
+        { "startOffset": 4596, "endOffset": 4600, "count": 1 },
+        { "startOffset": 4600, "endOffset": 6067, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

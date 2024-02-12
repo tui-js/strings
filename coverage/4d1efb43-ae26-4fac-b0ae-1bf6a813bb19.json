@@ -1,0 +1,25 @@
+{
+  "scriptId": "308",
+  "url": "file:///home/mateusz/Documents/Projects/strings/src/strip_styles.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 363, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "stripStyles",
+      "ranges": [{ "startOffset": 211, "endOffset": 362, "count": 12 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "",
+      "ranges": [
+        { "startOffset": 278, "endOffset": 341, "count": 96 },
+        { "startOffset": 310, "endOffset": 317, "count": 33 },
+        { "startOffset": 317, "endOffset": 340, "count": 63 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

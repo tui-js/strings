@@ -1,0 +1,24 @@
+{
+  "scriptId": "312",
+  "url": "https://jsr.io/@std/assert/0.215.0/assert_equals.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 1643, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "assertEquals",
+      "ranges": [
+        { "startOffset": 853, "endOffset": 1642, "count": 9 },
+        { "startOffset": 962, "endOffset": 1041, "count": 0 },
+        { "startOffset": 1042, "endOffset": 1047, "count": 0 },
+        { "startOffset": 1247, "endOffset": 1278, "count": 0 },
+        { "startOffset": 1314, "endOffset": 1341, "count": 0 },
+        { "startOffset": 1342, "endOffset": 1402, "count": 0 },
+        { "startOffset": 1531, "endOffset": 1641, "count": 0 }
+      ],
+      "isBlockCoverage": true
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "scriptId": "336",
+  "url": "https://jsr.io/@std/assert/0.215.0/unreachable.ts",
+  "functions": [
+    {
+      "functionName": "",
+      "ranges": [{ "startOffset": 0, "endOffset": 375, "count": 1 }],
+      "isBlockCoverage": true
+    },
+    {
+      "functionName": "unreachable",
+      "ranges": [{ "startOffset": 305, "endOffset": 374, "count": 0 }],
+      "isBlockCoverage": false
+    }
+  ]
+}
