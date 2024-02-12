@@ -8,7 +8,8 @@
     "./char_width": "./src/char_width.ts",
     "./dimensions": "./src/dimensions.ts",
     "./strip_styles": "./src/strip_styles.ts",
-    "./text_width": "./src/text_width.ts"
+    "./text_width": "./src/text_width.ts",
+    "./slice": "./src/slice.ts"
   },
 
   "exclude": [
