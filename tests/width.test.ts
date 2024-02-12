@@ -1,5 +1,5 @@
 import { assertEquals } from "jsr:@std/assert@0.215.0";
-import { intoCodePoints } from "./shared.ts";
+import { errorMessage } from "./shared.ts";
 
 import { textWidth } from "../src/text_width.ts";
 import { charWidth } from "../src/char_width.ts";
@@ -69,16 +69,21 @@ Deno.test("textWidth() and charWidth()", () => {
 
   for (const [charset, expected] of EXPECTED_CHAR_RESULTS) {
     for (const char of charset) {
-      const errorMessage = `
-Failed on character: "${char}".
-Codepoints: [${intoCodePoints(char)}]`;
-
-      assertEquals(charWidth(char), expected, errorMessage + "C=E");
-      assertEquals(textWidth(char), charWidth(char), errorMessage + "T=C");
+      assertEquals(
+        charWidth(char),
+        expected,
+        errorMessage(char),
+      );
+      assertEquals(
+        textWidth(char),
+        charWidth(char),
+        errorMessage("textWidth=charWidth"),
+      );
     }
   }
 
   const EXPECTED_TEXT_RESULTS = [
+    ["", 0],
     ["abc", 3],
     ["ａｂｃ", 6],
     ["🐶🐱🐭", 6],
@@ -117,17 +122,13 @@ Codepoints: [${intoCodePoints(char)}]`;
   ];
 
   for (const [text, expected] of EXPECTED_TEXT_RESULTS) {
-    const errorMessage = `
-Failed on text: "${text}".
-Codepoints: [${intoCodePoints(text)}]`;
-
-    assertEquals(textWidth(text), expected, errorMessage);
+    assertEquals(textWidth(text), expected, errorMessage(text));
 
     for (const style of STYLES) {
       assertEquals(
         textWidth(style + text),
         expected,
-        errorMessage + "T+S=E+S",
+        errorMessage(text, "styled"),
       );
     }
   }

@@ -18,6 +18,7 @@ Deno.test("stripStyles()", () => {
 
       const styledWords =
         `${modifier}${word}${otherModifier}${otherWord}\x1b[0m`;
+
       assertEquals(stripStyles(styledWords), word + otherWord);
     }
   }

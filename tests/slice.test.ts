@@ -1,5 +1,5 @@
 import { assertEquals } from "jsr:@std/assert@0.215.0";
-import { intoCodePoints } from "./shared.ts";
+import { errorMessage } from "./shared.ts";
 
 import { slice } from "../src/slice.ts";
 
@@ -28,14 +28,10 @@ Deno.test("slice()", () => {
   for (
     const [input, start, end, preserveAllAnsi, expected] of EXPECTED_RESULTS
   ) {
-    const errorMessage = `
-Failed on input: "${input}".
-Codepoints: [${intoCodePoints(input)}]`;
-
     assertEquals(
       slice(input, start, end, preserveAllAnsi),
       expected,
-      errorMessage,
+      errorMessage(input),
     );
   }
 });

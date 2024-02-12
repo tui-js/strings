@@ -1,7 +1,7 @@
 import { assertEquals } from "jsr:@std/assert@0.215.0";
-import { intoCodePoints } from "./shared.ts";
 
 import { dimensions } from "../src/dimensions.ts";
+import { errorMessage } from "./shared.ts";
 
 Deno.test("dimensions()", () => {
   // deno-fmt-ignore
@@ -19,10 +19,6 @@ Deno.test("dimensions()", () => {
   ] as const;
 
   for (const [text, expected] of EXPECTED_RESULTS) {
-    const errorMessage = `
-Failed on text: "${text}".
-Codepoints: [${intoCodePoints(text)}]`;
-
-    assertEquals(dimensions(text), expected, errorMessage);
+    assertEquals(dimensions(text), expected, errorMessage(text));
   }
 });
