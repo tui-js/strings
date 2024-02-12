@@ -11,7 +11,11 @@
     "./text_width": "./src/text_width.ts"
   },
 
-  "exclude": ["./build/templates"],
+  "exclude": [
+    "./build/templates",
+    "./src/char_names.ts" // we ignore this file, because its like 1MB
+  ],
+
   "publish": {
     "exclude": ["./build"]
   },
