@@ -35073,7 +35073,7 @@ export const charNameMap: Record<number, string> = {
 } as const;
 
 /**
- * Returns the Unicode $UNICODE_VERSION final name of given character.
+ * Returns the Unicode 15.1.0 final name of given character.
  *
  * @example
  * ```ts

@@ -2,7 +2,7 @@
 
 /**
  * Returns a width of given {character}.\
- * Width of character is determined from Unicode $UNICODE_VERSION East Asian Width data.
+ * Width of character is determined from Unicode 15.1.0 East Asian Width data.
  * Some characters (like Zerowidth punctuation) are edited manually.\
  * Possible widths are:
  *  - 2 – Wide or Fullwidth

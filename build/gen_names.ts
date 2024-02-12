@@ -12,8 +12,8 @@ async function generateCharWidthFunction() {
   const code = (await Deno.readTextFile(
     new URL(import.meta.resolve("./templates/char_name.ts")),
   ))
-    .replace("$UNICODE_VERSION", NLData.unicodeVersion)
-    .replace("$CHAR_NAME_MAP", charNameMap);
+    .replaceAll("$UNICODE_VERSION", NLData.unicodeVersion)
+    .replaceAll("$CHAR_NAME_MAP", charNameMap);
 
   return code;
 }

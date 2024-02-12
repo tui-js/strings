@@ -54,8 +54,8 @@ async function generateCharWidthFunction() {
   const code = (await Deno.readTextFile(
     new URL(import.meta.resolve("./templates/char_width.ts")),
   ))
-    .replace("$UNICODE_VERSION", EAWData.unicodeVersion)
-    .replace("$TWO_WIDTH_CONDITION", twoWidthCondition);
+    .replaceAll("$UNICODE_VERSION", EAWData.unicodeVersion)
+    .replaceAll("$TWO_WIDTH_CONDITION", twoWidthCondition);
 
   return code;
 }
