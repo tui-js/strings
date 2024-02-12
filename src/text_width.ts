@@ -4,7 +4,7 @@ import { charWidth } from "./char_width.ts";
 /**
  * Calculate width of given {input}.
  *
- * @see src/char_width.ts
+ * @see {@link /src/char_width.ts}
  * @example
  * ```ts
  * console.log(textWidth("Hello world")); // 11

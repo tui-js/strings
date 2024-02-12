@@ -46,7 +46,7 @@ export function loopAnsi(input: string, callback: LoopAnsiCallback): void {
 }
 
 /**
- * @see https://en.wikipedia.org/wiki/ANSI_escape_code
+ * @see {@link https://en.wikipedia.org/wiki/ANSI_escape_code}
  */
 export function isFinalAnsiByte(character: string): boolean {
   const charCode = character.charCodeAt(0);
