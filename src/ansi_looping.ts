@@ -1,5 +1,5 @@
 interface LoopAnsiCallback {
-  (char: string, lastStyle?: string): void | true;
+  (char: string, lastStyle?: string): void | boolean;
 }
 
 /**
