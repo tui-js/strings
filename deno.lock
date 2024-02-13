@@ -47,5 +47,10 @@
     "https://jsr.io/@std/assert/0.215.0/unimplemented.ts": "ed3115f6fb271277e0522f3b18f020259900c385e3fa986f109a519a1cf25763",
     "https://jsr.io/@std/assert/0.215.0/unreachable.ts": "1e748f69f73c57f4de9ba1dba39306b86e0ad2c0915975608519a2bcf42c262f",
     "https://jsr.io/@std/fmt/0.215.0/colors.ts": "59b5de7c07cdc0322ed61b2d98da1ca4fbc9f576d45c2beee577a27556e52d63"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@0.215.0"
+    ]
   }
 }

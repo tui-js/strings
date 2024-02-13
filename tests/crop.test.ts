@@ -1,5 +1,5 @@
 // Test for the crop function based on the slice.test.ts
-import { assertEquals } from "jsr:@std/assert@0.215.0";
+import { assertEquals } from "@std/assert";
 import { errorMessage } from "./shared.ts";
 
 import { crop } from "../src/crop.ts";

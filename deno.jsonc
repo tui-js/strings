@@ -13,17 +13,20 @@
     "./text_width": "./src/text_width.ts"
   },
 
-  "exclude": ["./build/templates"],
+  "imports": {
+    "@std/assert": "jsr:@std/assert@0.215.0"
+  },
 
+  "exclude": ["./build/templates"],
   "lint": {
     "exclude": [
       "./src/char_names.ts" // we ignore this file, because its like 1MB
     ]
   },
-
   "publish": {
     "exclude": ["./build"]
   },
+
   "tasks": {
     "gen_width": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_width.ts > src/char_width.ts && deno fmt src/char_width.ts",
     "gen_names": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_names.ts > src/char_names.ts && deno fmt src/char_names.ts",

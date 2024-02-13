@@ -1,4 +1,4 @@
-import { assertEquals } from "jsr:@std/assert@0.215.0";
+import { assertEquals } from "@std/assert";
 import { stripStyles } from "../src/strip_styles.ts";
 
 Deno.test("stripStyles()", () => {

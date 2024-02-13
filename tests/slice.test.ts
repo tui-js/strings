@@ -1,4 +1,4 @@
-import { assertEquals } from "jsr:@std/assert@0.215.0";
+import { assertEquals } from "@std/assert";
 import { errorMessage } from "./shared.ts";
 
 import { slice } from "../src/slice.ts";
