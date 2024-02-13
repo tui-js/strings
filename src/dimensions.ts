@@ -1,7 +1,7 @@
 import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 
-type Dimensions = ReturnType<typeof Deno.consoleSize>;
+export type Dimensions = ReturnType<typeof Deno.consoleSize>;
 
 /**
  * Calculate with and height of given {input}.\
