@@ -10,5 +10,8 @@ export function intoCodePoints(string: string): string[] {
 // Returns a string with the error message for failedd test
 export function errorMessage(input: string, code?: string): string {
   const codePoints = intoCodePoints(input);
-  return `\n<${code}>Failed on input: "${input}".\nCodepoints: [${codePoints}]`;
+  let message = "\n";
+  if (code) message += `<${code}>`;
+  message += `Failed on input: "${input}".\nCodepoints: [${codePoints}]`;
+  return message;
 }
