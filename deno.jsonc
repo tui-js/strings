@@ -6,7 +6,7 @@
     "./ansi_looping": "./src/ansi_looping.ts",
     "./char_names": "./src/char_names.ts",
     "./char_width": "./src/char_width.ts",
-    "./crop": "./src/crop.ts",
+    "./crop_end": "./src/crop_end.ts",
     "./dimensions": "./src/dimensions.ts",
     "./slice": "./src/slice.ts",
     "./strip_styles": "./src/strip_styles.ts",

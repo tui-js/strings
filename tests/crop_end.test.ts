@@ -2,10 +2,10 @@
 import { assertEquals } from "@std/assert";
 import { errorMessage } from "./shared.ts";
 
-import { crop } from "../src/crop.ts";
+import { cropEnd } from "../src/crop_end.ts";
 import { DEFAULT_ELLIPSIS } from "../src/shared.ts";
 
-Deno.test("crop()", () => {
+Deno.test("cropEnd()", () => {
   const EXPECTED_RESULTS = [
     ["Hello, World!", 5, undefined, undefined, "Hello"],
     ["🐶 woof woof", 7, undefined, undefined, "🐶 woof"],
@@ -40,7 +40,7 @@ Deno.test("crop()", () => {
       of EXPECTED_RESULTS
   ) {
     assertEquals(
-      crop(input, width, ellipsis, preserveAllAnsi),
+      cropEnd(input, width, ellipsis, preserveAllAnsi),
       expected,
       errorMessage(input),
     );

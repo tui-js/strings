@@ -4,7 +4,7 @@ import { charWidth } from "./char_width.ts";
 import { loopAnsi } from "./ansi_looping.ts";
 
 /**
- * Crops the {input} to given {desiredWidth}.
+ * Crops the end of the {input} so that it fits in given {desiredWidth}.
  *
  * Keep in mind that this function might return string shorter than {desiredWidth} in two scenarios:
  * - {input} text was shorter than specified {desiredWidth}.
@@ -17,17 +17,17 @@ import { loopAnsi } from "./ansi_looping.ts";
  *
  * @example
  * ```ts
- * console.log(crop("Hello, World!", 5)); // "Hello"
- * console.log(crop("🐶 woof woof", 7)); // "🐶 woof"
- * console.log(crop("🐶", 2)); // "🐶"
- * console.log(crop("🐶", 1)); // "…"
- * console.log(crop("🐶", 1, " ")); // " " (custom ellipsis)
- * console.log(crop("🐶", 1, "🐱")); // "" (ellipsis is too wide)
- * console.log(crop("\x1b[32mfoo\x1b[0m", 3)); // "\x1b[32mfoo\x1b[0m" (preserve all ansi styles [default])
- * console.log(crop("\x1b[32mfoo\x1b[0m", 2, undefined, false)); // "\x1b[32mfo\x1b[0m" (preserve only the ansi styles that are in the slice range)
+ * console.log(cropEnd("Hello, World!", 5)); // "Hello"
+ * console.log(cropEnd("🐶 woof woof", 7)); // "🐶 woof"
+ * console.log(cropEnd("🐶", 2)); // "🐶"
+ * console.log(cropEnd("🐶", 1)); // "…"
+ * console.log(cropEnd("🐶", 1, " ")); // " " (custom ellipsis)
+ * console.log(cropEnd("🐶", 1, "🐱")); // "" (ellipsis is too wide)
+ * console.log(cropEnd("\x1b[32mfoo\x1b[0m", 3)); // "\x1b[32mfoo\x1b[0m" (preserve all ansi styles [default])
+ * console.log(cropEnd("\x1b[32mfoo\x1b[0m", 2, undefined, false)); // "\x1b[32mfo\x1b[0m" (preserve only the ansi styles that are in the slice range)
  * ```
  */
-export function crop(
+export function cropEnd(
   input: string,
   desiredWidth: number,
   ellipsis = DEFAULT_ELLIPSIS,
