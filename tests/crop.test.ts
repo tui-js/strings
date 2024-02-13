@@ -2,7 +2,8 @@
 import { assertEquals } from "jsr:@std/assert@0.215.0";
 import { errorMessage } from "./shared.ts";
 
-import { crop, DEFAULT_ELLIPSIS } from "../src/crop.ts";
+import { crop } from "../src/crop.ts";
+import { DEFAULT_ELLIPSIS } from "../src/shared.ts";
 
 Deno.test("crop()", () => {
   const EXPECTED_RESULTS = [
