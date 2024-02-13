@@ -2,9 +2,12 @@ import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 
 /**
- * Calculate width of given {input}.
+ * Calculate width of given {input}.\
+ * It counts the width of characters and ignores ANSI escape codes.\
+ * It uses the same definition for character width as `charWidth`.
  *
- * @see {@link /src/char_width.ts}
+ * @see {@link charWidth} – function used for character width calculation.
+ *
  * @example
  * ```ts
  * console.log(textWidth("Hello world")); // 11

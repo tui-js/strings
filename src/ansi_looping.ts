@@ -6,7 +6,7 @@ interface LoopAnsiCallback {
  * Loop over {input}.\
  * For every character, that's not an ansi sequence call {callback}.\
  * If between last and current call there was an ansi style,
- * the second argument of that callback will be equal to that style.
+ * the second argument of that callback will be equal to that style.\
  * Returning `true` from {callback} will break the loop.
  *
  * @example

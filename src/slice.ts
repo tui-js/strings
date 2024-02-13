@@ -13,7 +13,7 @@ import { textWidth } from "./text_width.ts";
  *    to make it the same width as {end}-{start}.
  *  - If {ellipsis} itself can't be fit into {end}-{start}, it will be omitted.
  *
- * @see {@link DEFAULT_ELLIPSIS} for the default ellipsis character
+ * @see {@link DEFAULT_ELLIPSIS} – the default ellipsis character.
  *
  * @example
  * ```ts

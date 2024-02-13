@@ -13,7 +13,7 @@ import { loopAnsi } from "./ansi_looping.ts";
  *  	to make it the same width as {desiredWidth}.
  *  - If {ellipsis} itself can't be fit into {desiredWidth}, it will be omitted.
  *
- * @see {@link DEFAULT_ELLIPSIS} for the default ellipsis character
+ * @see {@link DEFAULT_ELLIPSIS} – the default ellipsis character
  *
  * @example
  * ```ts

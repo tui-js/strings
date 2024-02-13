@@ -1,4 +1,3 @@
-// Test for the crop function based on the slice.test.ts
 import { assertEquals } from "@std/assert";
 import { errorMessage } from "./shared.ts";
 
