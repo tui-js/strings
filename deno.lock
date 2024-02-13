@@ -10,8 +10,7 @@
         "dependencies": [
           "jsr:@std/fmt@^0.215.0"
         ]
-      },
-      "@std/fmt@0.215.0": {}
+      }
     }
   },
   "remote": {
