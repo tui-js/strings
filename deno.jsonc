@@ -1,16 +1,16 @@
 {
   "name": "@tui/strings",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "exports": {
     ".": "./mod.ts",
     "./ansi_looping": "./src/ansi_looping.ts",
     "./char_names": "./src/char_names.ts",
     "./char_width": "./src/char_width.ts",
+    "./crop": "./src/crop.ts",
     "./dimensions": "./src/dimensions.ts",
-    "./strip_styles": "./src/strip_styles.ts",
-    "./text_width": "./src/text_width.ts",
     "./slice": "./src/slice.ts",
-    "./crop": "./src/crop.ts"
+    "./strip_styles": "./src/strip_styles.ts",
+    "./text_width": "./src/text_width.ts"
   },
 
   "exclude": ["./build/templates"],
