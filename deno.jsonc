@@ -9,6 +9,7 @@
     "./crop_end": "./src/crop_end.ts",
     "./crop_start": "./src/crop_start.ts",
     "./dimensions": "./src/dimensions.ts",
+    "./insert": "./src/insert.ts",
     "./slice": "./src/slice.ts",
     "./strip_styles": "./src/strip_styles.ts",
     "./text_width": "./src/text_width.ts"
