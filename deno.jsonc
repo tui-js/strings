@@ -9,7 +9,8 @@
     "./dimensions": "./src/dimensions.ts",
     "./strip_styles": "./src/strip_styles.ts",
     "./text_width": "./src/text_width.ts",
-    "./slice": "./src/slice.ts"
+    "./slice": "./src/slice.ts",
+    "./crop": "./src/crop.ts"
   },
 
   "exclude": ["./build/templates"],

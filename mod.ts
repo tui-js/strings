@@ -4,3 +4,4 @@ export * from "./src/dimensions.ts";
 export * from "./src/strip_styles.ts";
 export * from "./src/text_width.ts";
 export * from "./src/slice.ts";
+export * from "./src/crop.ts";
