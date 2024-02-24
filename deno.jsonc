@@ -1,6 +1,6 @@
 {
   "name": "@tui/strings",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "exports": {
     ".": "./mod.ts",
     "./ansi_looping": "./src/ansi_looping.ts",
