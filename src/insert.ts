@@ -6,7 +6,7 @@ import { cropStart } from "./crop_start.ts";
 /**
  * Inserts {fg} on top of the {bg} starting at {pos}.\
  * Position is measured in chararcter widths.\
- * When {explicitStyleReset} is set to true ANSI reset style code (`"\x1b[0m"`) is inserted around {fg}.
+ * When {explicitStyleReset} is set to true ANSI reset style code (`"\x1b[0m"`) is inserted around {fg}.\
  * {ellipsis} and {preserveAllAnsi} have the same behavior as in `cropStart` and `cropEnd`.
  *
  * @see {@link cropStart} – function used for cropping the start of a string.
