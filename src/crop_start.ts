@@ -58,6 +58,13 @@ export function cropStart(
 
     const width = charWidth(char);
     if (position < cropStart) {
+      if (
+        position + width > cropStart &&
+        position + ellipsisWidth === cropStart
+      ) {
+        cropped += ellipsis;
+        croppedWidth += ellipsisWidth;
+      }
       position += width;
       return;
     }
@@ -65,6 +72,7 @@ export function cropStart(
     if (croppedWidth + width > desiredWidth) {
       if (croppedWidth + ellipsisWidth === desiredWidth) {
         cropped += ellipsis;
+        croppedWidth += ellipsisWidth;
       }
       return true;
     }
@@ -72,10 +80,6 @@ export function cropStart(
     croppedWidth += width;
     cropped += char;
   });
-
-  if (croppedWidth + ellipsisWidth === desiredWidth) {
-    cropped += ellipsis;
-  }
 
   return cropped;
 }

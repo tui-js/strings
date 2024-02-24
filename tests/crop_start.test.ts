@@ -19,7 +19,7 @@ Deno.test("cropStart()", () => {
     ["meow 🐱", 0, undefined, undefined, ""],
 
     ["こんにちは、世界", 4, undefined, undefined, "世界"],
-    ["こんにちは、世界", 5, undefined, undefined, "世界" + DEFAULT_ELLIPSIS],
+    ["こんにちは、世界", 5, undefined, undefined, DEFAULT_ELLIPSIS + "世界"],
     ["こんにちは、世界", 6, undefined, undefined, "、世界"],
 
     ["ｱｲｳｴｵ", 1, undefined, undefined, "ｵ"],
