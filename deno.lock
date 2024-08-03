@@ -2,25 +2,25 @@
   "version": "3",
   "packages": {
     "specifiers": {
-      "jsr:@std/assert@0.215.0": "jsr:@std/assert@0.215.0",
-      "jsr:@std/fmt@^0.215.0": "jsr:@std/fmt@0.215.0"
+      "jsr:@std/assert@1.0.2": "jsr:@std/assert@1.0.2",
+      "jsr:@std/internal@^1.0.1": "jsr:@std/internal@1.0.1"
     },
     "jsr": {
-      "@std/assert@0.215.0": {
-        "integrity": "4d80a5b5f1aef916131e3b5dcf8cfdad397affe87da7fa6398d8088e146d1e48",
+      "@std/assert@1.0.2": {
+        "integrity": "ccacec332958126deaceb5c63ff8b4eaf9f5ed0eac9feccf124110435e59e49c",
         "dependencies": [
-          "jsr:@std/fmt@^0.215.0"
+          "jsr:@std/internal@^1.0.1"
         ]
       },
-      "@std/fmt@0.215.0": {
-        "integrity": "c6477b26423be9f5504ddfba73afcb7ead995a6886048bb091c420697c3d96b0"
+      "@std/internal@1.0.1": {
+        "integrity": "6f8c7544d06a11dd256c8d6ba54b11ed870aac6c5aeafff499892662c57673e6"
       }
     }
   },
   "remote": {},
   "workspace": {
     "dependencies": [
-      "jsr:@std/assert@0.215.0"
+      "jsr:@std/assert@1.0.2"
     ]
   }
 }
