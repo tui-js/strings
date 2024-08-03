@@ -1,3 +1,22 @@
+/**
+ * @module
+ * Loop over a string with respect for ANSI sequences easily.\
+ * @see {@linkcode loopAnsi} for more information.
+ *
+ * @example
+ * ```ts
+ * let text = "";
+ * loopAnsi("\x1b[32mHello world\x1b[0m", (char) => {
+ *    text += char;
+ *    if (char === "o") {
+ *      return true;
+ *    }
+ * });
+ *
+ * console.log(text); // "Hello"
+ * ```
+ */
+
 interface LoopAnsiCallback {
   (char: string, lastStyle?: string): void | boolean;
 }

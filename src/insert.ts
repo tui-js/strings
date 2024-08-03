@@ -1,3 +1,14 @@
+/**
+ * @module
+ * Inserts string on top of the other string.\
+ * @see {@linkcode insert} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(insert("This is foreground", "Fore", 8)); // "This is foreground"
+ * ```
+ */
+
 import { DEFAULT_ELLIPSIS } from "./shared.ts";
 import { textWidth } from "./text_width.ts";
 import { cropEnd } from "./crop_end.ts";

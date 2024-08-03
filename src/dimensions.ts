@@ -1,3 +1,14 @@
+/**
+ * @module
+ * Calculate with and height of given string.\
+ * @see {@linkcode dimensions} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(dimensions("Hello\nWorld!")); // { columns: 6, rows: 2 }
+ * ```
+ */
+
 import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 

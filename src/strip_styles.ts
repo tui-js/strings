@@ -1,3 +1,14 @@
+/**
+ * @module
+ * Removes ANSI styles from a string.\
+ * @see {@linkcode stripStyles} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(stripStyles("\x1b[32mHello world\x1b[0m")); // "Hello world"
+ * ```
+ */
+
 import { loopAnsi } from "./ansi_looping.ts";
 
 /**

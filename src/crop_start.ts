@@ -1,3 +1,14 @@
+/**
+ * @module
+ * Crops the start of the string so that it fits in given space.\
+ * @see {@linkcode cropStart} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(cropStart("Hello, World!", 6)); // "World!"
+ * ```
+ */
+
 import { DEFAULT_ELLIPSIS } from "./shared.ts";
 
 import { textWidth } from "./text_width.ts";

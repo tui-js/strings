@@ -1,4 +1,16 @@
-// Based on Unicode $UNICODE_VERSION
+/**
+ * @module
+ * Based on Unicode $UNICODE_VERSION.
+ * 
+ * Get name of given character.\
+ * @see {@linkcode charName} for more information.
+ * 
+ * @example
+ * ```ts
+ * console.log(charName("!")); // "EXCLAMATION MARK"
+ * ```
+ */
+
 
 /** Object mapping codePoint to its character name */
 export const charNameMap: Record<number, string> = {

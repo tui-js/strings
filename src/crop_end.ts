@@ -1,3 +1,14 @@
+/**
+ * @module
+ * Crops the end of the string so that it fits in given space.\
+ * @see {@linkcode cropEnd} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(cropEnd("Hello, World!", 5)); // "Hello"
+ * ```
+ */
+
 import { DEFAULT_ELLIPSIS } from "./shared.ts";
 
 import { charWidth } from "./char_width.ts";

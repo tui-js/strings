@@ -1,4 +1,15 @@
-// Based on Unicode 15.1.0
+/**
+ * @module
+ * Based on Unicode 15.1.0.
+ *
+ * Get width of given character.\
+ * @see {@linkcode charWidth} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(charWidth("🐱")); // 2
+ * ```
+ */
 
 /**
  * Returns a width of given {@linkcode character}.\

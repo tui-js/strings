@@ -1,3 +1,15 @@
+/**
+ * @module
+ * Calculate width of a string.\
+ * @see {@linkcode textWidth} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(textWidth("Hello world")); // 11
+ * console.log(textWidth("🐶🐕")); // 4
+ * ```
+ */
+
 import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 

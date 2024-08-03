@@ -1,3 +1,14 @@
+/**
+ * @module
+ * `String.prototype.slice` but using widths.\
+ * @see {@linkcode slice} for more information.
+ *
+ * @example
+ * ```ts
+ * console.log(slice("🐶 woof woof", 0, 7)); // "🐶 woof"
+ * ```
+ */
+
 import { DEFAULT_ELLIPSIS } from "./shared.ts";
 
 import { loopAnsi } from "./ansi_looping.ts";
