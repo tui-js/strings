@@ -13,6 +13,6 @@ export const charNameMap: Record<number, string> = {
  * console.log(charName("🐕")); // "DOG"
  * ```
  */
-export function charName(char: string): string {
+export function charName(char: string): string | undefined {
   return charNameMap[char.codePointAt(0)!];
 }
