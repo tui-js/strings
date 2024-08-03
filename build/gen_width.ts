@@ -1,8 +1,8 @@
 import {
   EastAsianWidth,
-  EastAsianWidthData,
+  type EastAsianWidthData,
   getEastAsianWidthData,
-  Range,
+  type Range,
 } from "./unicode/east_asian_width.ts";
 
 function getTwoWidthRanges(EAWData: EastAsianWidthData): Range[] {
