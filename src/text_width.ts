@@ -2,7 +2,7 @@ import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 
 /**
- * Calculate width of given {input}.\
+ * Calculate width of given {@linkcode input}.\
  * It counts the width of characters and ignores ANSI escape codes.\
  * It uses the same definition for character width as `charWidth`.
  *

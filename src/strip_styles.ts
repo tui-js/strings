@@ -1,7 +1,7 @@
 import { loopAnsi } from "./ansi_looping.ts";
 
 /**
- * Removes ANSI styles from given {input}.
+ * Removes ANSI styles from given {@linkcode input}.
  *
  * @example
  * ```ts
@@ -11,8 +11,7 @@ import { loopAnsi } from "./ansi_looping.ts";
 export function stripStyles(input: string): string {
   let output = "";
   loopAnsi(input, (char, style) => {
-    if (style) return;
-    output += char;
+    if (!style) output += char;
   });
   return output;
 }

@@ -3,11 +3,11 @@ interface LoopAnsiCallback {
 }
 
 /**
- * Loop over {input}.\
- * For every character, that's not an ansi sequence call {callback}.\
+ * Loop over {@linkcode input}.\
+ * For every character, that's not an ansi sequence call {@linkcode callback}.\
  * If between last and current call there was an ansi style,
  * the second argument of that callback will be equal to that style.\
- * Returning `true` from {callback} will break the loop.
+ * Returning `true` from {@linkcode callback} will break the loop.
  *
  * @example
  * ```ts
@@ -60,7 +60,7 @@ export function loopAnsi(input: string, callback: LoopAnsiCallback): void {
 }
 
 /**
- * @see {@link https://en.wikipedia.org/wiki/ANSI_escape_code}
+ * @see {@link https://en.wikipedia.org/wiki/ANSI_escape_code#CSI_(Control_Sequence_Introducer)_sequences}
  */
 export function isFinalAnsiByte(character: string): boolean {
   const charCode = character.charCodeAt(0);

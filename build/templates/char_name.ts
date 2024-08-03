@@ -1,4 +1,6 @@
 // Based on Unicode $UNICODE_VERSION
+
+/** Object mapping codePoint to its character name */
 export const charNameMap: Record<number, string> = {
   $CHAR_NAME_MAP
 } as const;

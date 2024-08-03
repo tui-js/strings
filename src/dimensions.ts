@@ -1,11 +1,12 @@
 import { loopAnsi } from "./ansi_looping.ts";
 import { charWidth } from "./char_width.ts";
 
+/** Dimensions in columns and rows of a terminal */
 export type Dimensions = ReturnType<typeof Deno.consoleSize>;
 
 /**
- * Calculate with and height of given {input}.\
- * If text width varies between lines, the maximum is taken.
+ * Calculate with and height of given {@linkcode input}.\
+ * If text width varies between lines, the maximum is returned.
  *
  * @example
  * ```ts

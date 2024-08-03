@@ -5,14 +5,14 @@ import { charWidth } from "./char_width.ts";
 import { loopAnsi } from "./ansi_looping.ts";
 
 /**
- * Crops the start of the {input} so that it fits in given {desiredWidth}.
+ * Crops the start of the {@linkcode input} so that it fits in given {@linkcode desiredWidth}.
  *
- * Keep in mind that this function might return string shorter than {desiredWidth} in two scenarios:
- * - {input} text was shorter than specified {desiredWidth}.
- * - {input} text had fullwidth or wide characters which couldn't be fit into {desiredWidth}.
+ * Keep in mind that this function might return string shorter than {@linkcode desiredWidth} in two scenarios:
+ * - {@linkcode input} text was shorter than specified {@linkcode desiredWidth}.
+ * - {@linkcode input} text had fullwidth or wide characters which couldn't be fit into {@linkcode desiredWidth}.
  *  - If that's the case, `crop` will try to append `ellipsis` to the end of the string
- *  	to make it the same width as {desiredWidth}.
- *  - If {ellipsis} itself can't be fit into {desiredWidth}, it will be omitted.
+ *  	to make it the same width as {@linkcode desiredWidth}.
+ *  - If {@linkcode ellipsis} itself can't be fit into {@linkcode desiredWidth}, it will be omitted.
  *
  * @see {@link DEFAULT_ELLIPSIS} – the default ellipsis character.
  *

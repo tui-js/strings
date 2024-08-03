@@ -4,10 +4,10 @@ import { cropEnd } from "./crop_end.ts";
 import { cropStart } from "./crop_start.ts";
 
 /**
- * Inserts {fg} on top of the {bg} starting at {pos}.\
+ * Inserts {@linkcode fg} on top of the {@linkcode bg} starting at {@linkcode pos}.\
  * Position is measured in chararcter widths.\
- * When {explicitStyleReset} is set to true ANSI reset style code (`"\x1b[0m"`) is inserted around {fg}.\
- * {ellipsis} and {preserveAllAnsi} have the same behavior as in `cropStart` and `cropEnd`.
+ * When {@linkcode explicitStyleReset} is set to true ANSI reset style code (`"\x1b[0m"`) is inserted around {@linkcode fg}.\
+ * {@linkcode ellipsis} and {@linkcode preserveAllAnsi} have the same behavior as in `cropStart` and `cropEnd`.
  *
  * @see {@link cropStart} – function used for cropping the start of a string.
  * @see {@link cropEnd} – function used for cropping the end of a string.

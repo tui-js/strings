@@ -1,7 +1,7 @@
 // Based on Unicode 15.1.0
 
 /**
- * Returns a width of given {character}.\
+ * Returns a width of given {@linkcode character}.\
  * Width of character is determined from Unicode 15.1.0 East Asian Width data.
  * Some characters (like Zerowidth punctuation) are edited manually.\
  * Possible widths are:

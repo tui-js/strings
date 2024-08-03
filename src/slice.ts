@@ -6,12 +6,12 @@ import { textWidth } from "./text_width.ts";
 /**
  * `String.prototype.slice` but using widths.
  *
- * Keep in mind that this function might return string shorter than {end}-{start} in two scenarios:
- * - {input} text was shorter than specified {end}-{start}.
- * - {input} text had fullwidth or wide characters which couldn't be fit into {end}-{start}.
+ * Keep in mind that this function might return string shorter than {@linkcode end}-{@linkcode start} in two scenarios:
+ * - {@linkcode input} text was shorter than specified {@linkcode end}-{@linkcode start}.
+ * - {@linkcode input} text had fullwidth or wide characters which couldn't be fit into {@linkcode end}-{@linkcode start}.
  *  - If that's the case, `slice` will try to append `ellipsis` to the end of the string
- *    to make it the same width as {end}-{start}.
- *  - If {ellipsis} itself can't be fit into {end}-{start}, it will be omitted.
+ *    to make it the same width as {@linkcode end}-{@linkcode start}.
+ *  - If {@linkcode ellipsis} itself can't be fit into {@linkcode end}-{@linkcode start}, it will be omitted.
  *
  * @see {@link DEFAULT_ELLIPSIS} – the default ellipsis character.
  *
