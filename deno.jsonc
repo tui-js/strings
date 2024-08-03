@@ -22,7 +22,7 @@
   "exclude": ["./build/templates"],
   "lint": {
     "exclude": [
-      "./src/char_names.ts" // we ignore this file, because its like 1MB
+      "./src/char_name.ts" // we ignore this file, because its like 1MB
     ]
   },
   "publish": {
@@ -31,7 +31,7 @@
 
   "tasks": {
     "gen_width": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_width.ts > src/char_width.ts && deno fmt src/char_width.ts",
-    "gen_names": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_names.ts > src/char_names.ts && deno fmt src/char_names.ts",
+    "gen_names": "deno run --allow-net=www.unicode.org --allow-read=build build/gen_names.ts > src/char_name.ts && deno fmt src/char_name.ts",
     "gen_all": "deno task gen_width && deno task gen_names"
   }
 }
