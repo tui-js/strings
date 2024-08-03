@@ -4,7 +4,7 @@
   "exports": {
     ".": "./mod.ts",
     "./ansi_looping": "./src/ansi_looping.ts",
-    "./char_names": "./src/char_names.ts",
+    "./char_name": "./src/char_name.ts",
     "./char_width": "./src/char_width.ts",
     "./crop_end": "./src/crop_end.ts",
     "./crop_start": "./src/crop_start.ts",
