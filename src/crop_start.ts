@@ -11,8 +11,8 @@
 
 import { DEFAULT_ELLIPSIS } from "./shared.ts";
 
-import { textWidth } from "./text_width.ts";
 import { charWidth } from "./char_width.ts";
+import { textWidth } from "./text_width.ts";
 import { loopAnsi } from "./ansi_looping.ts";
 
 /**
@@ -48,7 +48,7 @@ export function cropStart(
   ellipsis = DEFAULT_ELLIPSIS,
   preserveAllAnsi = true,
 ): string {
-  const ellipsisWidth = charWidth(ellipsis);
+  const ellipsisWidth = textWidth(ellipsis);
   const cropStart = textWidth(input) - desiredWidth;
 
   let cropped = "";
